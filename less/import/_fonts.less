@@ -24,7 +24,6 @@
         font-size: 18px;
     }
 }
-
 .text-company {
     .baseTextMontserrat();
     font-weight: 500;
@@ -34,6 +33,18 @@
     .baseTextMontserrat();
     font-weight: 500;
     font-size: 18px;
+    &-white {
+        .baseTextMontserrat();
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+    }
+    &-yellow {
+        .baseTextMontserrat();
+        font-weight: 500;
+        font-size: 18px;
+        color: @yellow;   
+    }
 }
 .text-sans {
     .baseTextOpenSans();
@@ -44,5 +55,8 @@
         .baseTextOpenSans();
         font-size: 18px;
         margin-right: 5px;
+    }
+    &-drop {
+        .baseTextOpenSans();
     }
 }

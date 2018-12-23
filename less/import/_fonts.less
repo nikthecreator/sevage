@@ -1,16 +1,38 @@
-.title {
+//Mixins 
+.headingMontserrat () {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    color: @title;
     font-weight: 600;
+    color: @title;
 }
-.text {
-    font-size: 16px;
-    font-weight: normal;
-}
-.text-mons {
-    .text;
+.baseTextMontserrat () {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.baseTextOpenSans () {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: @base-text;
+}
+
+.title {
+    .headingMontserrat();
+    &-page {
+        .headingMontserrat();
+        font-size: 18px;
+    }
+}
+
+.text-mons {
+    .baseTextMontserrat();
     font-weight: 500;
     font-size: 18px;
+}
+.text-sans {
+    .baseTextOpenSans();
+    &-bold {
+        font-weight: 600;
+    }
 }

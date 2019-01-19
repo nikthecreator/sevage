@@ -41,10 +41,25 @@
                 </div>
                 <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#" class="text-sans-nav">Контакты</a>
-                        <a href="#" class="text-sans-nav">Services</a>
-                        <a href="#" class="text-sans-nav">Clients</a>
-                        <a href="#" class="text-sans-nav">Contact</a>
+                        <button class="accordion">Section 1</button>
+                        <div class="panel">
+                                <a href="#" class="text-sans-navSlide">Services</a>
+                                <a href="#" class="text-sans-navSlide">Clients</a>
+                                <a href="#" class="text-sans-navSlide">Contact</a>
+                        </div>
+                        <button class="accordion">Section 2</button>
+                        <div class="panel">
+                                <a href="#" class="text-sans-navSlide">Services</a>
+                                <a href="#" class="text-sans-navSlide">Clients</a>
+                                <a href="#" class="text-sans-navSlide">Contact</a>
+                        </div>
+                        <a href="#" class="text-sans-navSlide">Services</a>
+                        <a href="#" class="text-sans-navSlide">Clients</a>
+                        <a href="#" class="text-sans-navSlide">Contact</a>
+                        <button class="callUsSlide" data-toggle="modal" data-target="#callUsModal">
+                                <img src="./img/icons/callUs-icon.svg" alt="">
+                                <span class="text-mons-whiteSlide">Свяжитесь с нами</span>
+                        </button>
                 </div>
            </div>
         </div>
@@ -53,7 +68,7 @@
             <div class="dropdown">
                 <button class="dropbtn"><span class="text-sans-nav">Компания</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
                 <div class="dropdown-content">
-                  <a href="#" class="text-sans-drop">Приимущества</a>
+                  <a href="#" class="text-sans-drop">Преимущества</a>
                   <a href="#" class="text-sans-drop">Партнеры</a>
                   <a href="#" class="text-sans-drop">О нас</a>
                 </div>

@@ -203,6 +203,32 @@ a img {
 .callUs:focus {
   outline: none;
 }
+.callUsSlide {
+  width: 220px;
+  height: 60px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  background-color: #2d60d5;
+  border: none;
+  margin-left: 15px;
+}
+.callUsSlide:hover {
+  cursor: pointer;
+  background-color: #0e3fb1;
+}
+.callUsSlide:focus {
+  outline: none;
+}
 .messengers {
   width: 80px;
   height: 40px;
@@ -222,10 +248,22 @@ a img {
   height: 100%;
   width: 150px;
 }
+.dropbtn-slide {
+  background-color: #fff;
+  border: none;
+  height: 50px;
+  width: 150px;
+}
 .dropdown {
   position: relative;
   display: inline-block;
   height: 100%;
+}
+.dropdown-slide {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  margin-left: 20px;
 }
 .drop-arow {
   -webkit-transition: all 0.3s;
@@ -256,7 +294,23 @@ a img {
   background-color: #f1f1f1;
   cursor: pointer;
 }
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown-slide:hover .dropdown-content {
+  display: block;
+}
+.dropdown-slide:hover .dropbtn {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
 .dropdown:hover .drop-arow {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.dropdown-slide:hover .drop-arow {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transform: rotate(180deg);
@@ -280,6 +334,41 @@ a img {
 }
 .linksNavbar-items {
   color: #2d60d5;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 .menu-btn {
   width: 120px;
@@ -317,7 +406,7 @@ a img {
   padding-top: 60px;
 }
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 20px 20px 32px;
   text-decoration: none;
   font-size: 20px;
   color: #818181;
@@ -331,7 +420,7 @@ a img {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 5px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -972,6 +1061,13 @@ footer {
   font-size: 18px;
   color: #fff;
 }
+.text-mons-whiteSlide {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: 500;
+  color: #ffffff;
+}
 .text-mons-yellow {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -1012,6 +1108,14 @@ footer {
 }
 .text-sans-nav:hover {
   color: #2d60d5;
+}
+.text-sans-navSlide {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+  font-size: 20px;
+  margin-right: 5px;
 }
 .text-sans-drop {
   font-family: 'Open Sans', sans-serif;

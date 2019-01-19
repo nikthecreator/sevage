@@ -348,6 +348,9 @@ a img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+.accordion:focus {
+  outline: none;
+}
 .active,
 .accordion:hover {
   background-color: #ccc;
@@ -369,6 +372,12 @@ a img {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
+}
+.panel a {
+  margin-top: 10px;
+}
+.panel a:hover {
+  color: #2d60d5;
 }
 .menu-btn {
   width: 120px;
@@ -1007,6 +1016,13 @@ footer {
   color: #333333;
   text-align: left;
 }
+.title-accordion {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+  font-size: 20px;
+}
 .subTitle-product {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -1114,8 +1130,6 @@ footer {
   font-size: 16px;
   font-weight: 400;
   color: #555555;
-  font-size: 20px;
-  margin-right: 5px;
 }
 .text-sans-drop {
   font-family: 'Open Sans', sans-serif;

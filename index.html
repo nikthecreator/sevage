@@ -253,25 +253,29 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Новое сообщение</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Введите ваше имя </label>
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Иванов Иван Иванович">
                 </div>
                 <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
+                    <label for="recipient-name" class="col-form-label">Введите ваш номер телефона</label>
+                    <input type="text" class="form-control" id="recipient-name" placeholder="+375 (00) 000 00 00">
+                </div>
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Введите ваше сообщение</label>
                     <textarea class="form-control" id="message-text"></textarea>
                 </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Отправить</button>
+                <button type="button" class="btn-send">Отправить</button>
             </div>
             </div>
         </div>
@@ -282,7 +286,7 @@
         <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="text-mons" id="exampleModalLabel">Контакты</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Контакты</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>

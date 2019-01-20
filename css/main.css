@@ -1238,3 +1238,8 @@ footer {
   font-weight: 600;
   color: #2d60d5;
 }
+@media (max-width: 575.98px) {
+  .text-sans-item {
+    font-size: 16px;
+  }
+}

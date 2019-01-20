@@ -174,7 +174,11 @@
         color: @blue;
     }
 }
-
+.wrapp-mySlidenav {
+    width: 100%;
+    height: 100%;
+    // margin-top: 50px;
+}
 //accardion
 
 .accordion {
@@ -432,3 +436,99 @@
     .sidenav a {font-size: 18px;}
 }
 
+// Media 
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .accordion {
+        display: none;
+    }
+    .callUsSlide {
+        display: none;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .company, .navBlue, .navWhite {
+        width: 960px;
+    }
+    .accordion {
+        display: none;
+    }
+    .callUsSlide {
+        display: none;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .wrapp-navWhite {
+        display: none;
+    }
+    .navWhite {
+        display: none;
+    }
+    .company {
+        width: 750px;
+    }
+    .navBlue {
+        width: 750px;
+    }
+    .callUs {
+        display: none;
+    }
+    .wrapp-mySlidenav {
+        margin-top: 50px;
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .wrapp-navWhite {
+        display: none;
+    }
+    .navWhite {
+        display: none;
+    }
+    .company {
+        width: 500px;
+    }
+    .navBlue {
+        width: 500px;
+    }
+    .callUs {
+        display: none;
+    }
+    .wrapp-mySlidenav {
+        margin-top: 50px;
+    }
+    .work-time {
+        display: none;
+    }
+ }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .wrapp-navWhite {
+        display: none;
+    }
+    .navWhite {
+        display: none;
+    }
+    .company {
+        width: 300px;
+    }
+    .navBlue {
+        width: 300px;
+    }
+    .callUs {
+        display: none;
+    }
+    .wrapp-mySlidenav {
+        margin-top: 50px;
+    }
+    .work-time {
+        display: none;
+    }
+ }

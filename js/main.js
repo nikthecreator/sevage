@@ -23,7 +23,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-
+// Slick Slider
 $('.sl').slick({
   slidesToShow: 3,
   slidesToScroll: 3,

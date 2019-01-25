@@ -19,10 +19,6 @@
     width: 576px;
     height: 100%;
 }
-//beadcrumb 
-.breadcrumb {
-    background-color: #fff;
-}
 // page 
 .page {
     padding: 30px;
@@ -66,6 +62,13 @@
             width: 250px;
             height: 120px;
         }
+        &-btn {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &-homeLink {
             width: 100%;
             height: 50px;
@@ -75,3 +78,74 @@
         }
     }
 }
+.text-link {
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: @blue;
+}
+.callUsQuestion {
+    width: 240px;
+    height: 60px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.2s;
+    padding: 10px;
+    background-color:@blue;
+    border: none;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(14, 63, 177);
+    }
+    &:focus {
+        outline: none;
+    } 
+}
+
+// Media 
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .wrapp-page {
+        margin: auto;
+        width: 425px;
+        height: 100%;
+    }
+    .page {
+        width: 425px;
+    }
+ }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .heading {
+        width: 300px;
+    } 
+    .wrapp-page {
+        margin: auto;
+        width: 300px;
+        height: 100%;
+    }
+    .page {
+        width: 300px;
+    }
+ }

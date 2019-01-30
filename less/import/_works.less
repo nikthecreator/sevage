@@ -1,0 +1,121 @@
+.lastworks-wrapp {
+    width: 100%;
+    height: 100%;
+    &-heading {
+        width: 1140px;
+        height: 140px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+}
+.lastworks {
+    width: 1140px;
+    margin: auto;
+    height: 100%;
+    &-link {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &-page {
+        margin: auto;
+        width: 246px;
+        height: 100px;
+        border-radius: 3px;
+        box-shadow: 0 0 10px 0 rgba(212, 219, 225, 0.5);
+        background-color: #ffffff;
+        transition: all 0.2s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover {
+            box-sizing: border-box;
+            box-shadow: 0px 5px 15px #D4DBE1;
+        }
+        &-icon {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-text {
+            width: 146px;
+            height: 100px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    } 
+}
+#row-2 {
+    margin-top: 30px;
+}
+
+// Media 
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .lastworks {
+        width: 1140px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .lastworks {
+        width: 960px;
+        &-page {
+            width: 200px;
+        }
+    }
+    .lastworks-wrapp-heading {
+        width: 960px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .lastworks {
+        width: 750px;
+        &-page {
+            width: 200px;
+        }
+    }
+    .lastworks-wrapp-heading {
+        width: 750px;
+        text-align: center;
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .lastworks {
+        width: 500px;
+    }
+    .lastworks-wrapp-heading {
+        width: 500px;
+        text-align: center;
+    }
+    #row-2 {
+        margin-top: 0px;
+    }
+ }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .lastworks {
+        width: 300px;
+    }
+    .lastworks-wrapp-heading {
+        width: 300px;
+        text-align: center;
+    }
+    #row-2 {
+        margin-top: 0px;
+    }
+ }
+
+

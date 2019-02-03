@@ -29,7 +29,7 @@ $('.sl').slick({
   slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 2000,
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   responsive: [
@@ -61,6 +61,7 @@ $('.sl').slick({
     // instead of a settings object
   ]
 });
+
 
 
 

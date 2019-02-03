@@ -992,6 +992,10 @@ a img {
   .workscheme-card {
     margin: auto;
   }
+  .arow-rotate {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 @media (max-width: 575.98px) {
   .wrapp-workscheme-heading {
@@ -1006,6 +1010,10 @@ a img {
   }
   .workscheme-card {
     margin: auto;
+  }
+  .arow-rotate {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 .partners {

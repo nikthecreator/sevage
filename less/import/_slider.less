@@ -71,5 +71,145 @@
 
 .first-slide{
     background: url(/img/slider/first.jpg);
+    background-size: cover;
+}
+
+// Media
+
+@media (min-width: 1200px) {
+    .slider {
+        width: 1140px;
+        height: 600px;
+        margin: auto;
+    }
+    
+    .sl-1 {
+        width: 1140px;
+        height: 600px;
+    }
+    
+    .sl-slide-header {
+        width: 1140px !important;
+        height: 600px !important;
+    } 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .wrapp-slider {
+        height: 570px;
+    }
+    .slider {
+        width: 960px;
+        height: 500px;
+        margin: auto;
+    }
+    
+    .sl-1 {
+        width: 960px;
+        height: 500px;
+    }
+    
+    .sl-slide-header {
+        width: 960px !important;
+        height: 500px !important;
+    }
+
+    .prev,
+    .next {
+        z-index: 10 !important;
+    }   
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .wrapp-slider {
+        height: 500px;
+    }
+    .slider {
+        width: 750px;
+        height: 400px;
+        margin: auto;
+    }
+    
+    .sl-1 {
+        width: 750px;
+        height: 400px;
+    }
+    
+    .sl-slide-header {
+        width: 375px !important;
+        height: 400px !important;
+    }
+
+    .prev,
+    .next {
+        margin-top: 200px;
+        z-index: 10 !important;
+    } 
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .wrapp-slider {
+        height: 360px;
+    }
+    .slider {
+        width: 500px;
+        height: 300px;
+        margin: auto;
+    }
+    
+    .sl-1 {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .sl-slide-header {
+        width: 250px !important;
+        height: 300px !important;
+    }
+
+    .prev,
+    .next {
+        margin-top: 120px;
+        z-index: 10 !important;
+    } 
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .wrapp-slider {
+        height: 310px;
+    }
+    .slider {
+        width: 300px;
+        height: 250px;
+        margin: auto;
+    }
+    
+    .sl-1 {
+        width: 300px;
+        height: 250px;
+    }
+    
+    .sl-slide-header {
+        width: 300px !important;
+        height: 250px !important;
+    }
+
+    .prev,
+    .next {
+        margin-top: 100px;
+        z-index: 10 !important;
+        width: 30px;
+        height: 30px;
+    } 
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
 }
 

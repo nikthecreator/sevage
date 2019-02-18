@@ -66,12 +66,50 @@
 .one {
     width: 100%;
     height: 100%;
-    background-color: #000000;
+    padding: 100px;
+}
+
+.two {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.girl {
+    margin-top: 150px;
+}
+
+.slider-header {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+}
+.slider-text {
+    width: 100%;
+    height: 200px;
+}
+.slider-button {
+    width: 100%;
+    height: 50px;
+}
+
+.slider-btn {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: @yellow;
 }
 
 .first-slide{
     background: url(/img/slider/first.jpg);
     background-size: cover;
+}
+
+.sec-slide {
+    background-color: #fff;
 }
 
 // Media
@@ -138,7 +176,7 @@
     }
     
     .sl-slide-header {
-        width: 375px !important;
+        width: 750px !important;
         height: 400px !important;
     }
 
@@ -166,7 +204,7 @@
     }
     
     .sl-slide-header {
-        width: 250px !important;
+        width: 500px !important;
         height: 300px !important;
     }
 
@@ -180,27 +218,27 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
     .wrapp-slider {
-        height: 310px;
+        height: 400px;
     }
     .slider {
-        width: 300px;
-        height: 250px;
+        width: 100%;
+        height: 350px;
         margin: auto;
     }
     
     .sl-1 {
-        width: 300px;
-        height: 250px;
+        width: 100%;
+        height: 350px;
     }
     
     .sl-slide-header {
-        width: 300px !important;
-        height: 250px !important;
+        width: 100% !important;
+        height: 350px !important;
     }
 
     .prev,
     .next {
-        margin-top: 100px;
+        margin-top: 150px;
         z-index: 10 !important;
         width: 30px;
         height: 30px;
@@ -210,6 +248,41 @@
     }
     .next {
         right: 10px;
+    }
+    .one {
+        padding: 10px;
+    }
+    .slider-header {
+        width: 100%;
+        height: 30px;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slider-text {
+        width: 100%;
+        height: 150px;
+        margin-top: 75px;
+        text-align: center;
+    }
+    .slider-button {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .two {
+        display: none;
+    }  
+    .slider-btn {
+        width: 250px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: @yellow;
     }
 }
 

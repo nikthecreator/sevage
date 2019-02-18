@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./libs/fotorama/fotorama.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/icons/favicon.png" type="image/png">
+
+    <title>Корпусная мебель</title>
+</head>
+
+<div class="myNavbar">
+        <div class="wrapp-company">
+            <div class="company">
+                <h5 class="text-company">Официальный сайт компании</h5>
+            </div>
+        </div>
+        <div class="wrapp-navBlue">
+           <div class="navBlue">
+                <a href="./index.html" class="logo">
+                    <img src="./img/icons/logo.svg" alt="">
+                </a>
+                <div class="work-time">
+                        <p class="text-mons-white">Время работы : пн - пт с  <span class="text-mons-yellow">10.00 - 18.00</span></p>
+                </div>
+                <button class="callUs" data-toggle="modal" data-target="#callUsModal">
+                    <img src="./img/icons/callUs-icon.svg" alt="">
+                    <span class="text-mons-white">Свяжитесь с нами</span>
+                </button>
+                <div class="menu-btn" onclick="openNav()">
+                    <span class="text-mons-menu">Меню</span>
+                    <img src="./img/icons/menu-icon.svg" alt="">
+                </div>
+                <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="wrapp-mySlidenav">
+                            <button class="accordion"><span class="title-accordion">Компания</span></button>
+                        <div class="panel">
+                                <a href="#"><p class="text-sans-navSlide">Преимущества</p></a>
+                                <a href="#"><p class="text-sans-navSlide">Партнеры</p></a>
+                                <a href="#"><p class="text-sans-navSlide">О нас</p></a>
+                        </div>
+                        <button class="accordion"><span class="title-accordion">Продукция</span></button>
+                        <div class="panel">
+                                <a href="#"><p class="text-sans-navSlide">Раскройка и оклейка</p></a>
+                                <a href="#"><p class="text-sans-navSlide">Раздвижные двери</p></a>
+                                <a href="./"><p class="text-sans-navSlide">Корпусная мебель</p></a>
+                                <a href="#"><p class="text-sans-navSlide">Кухонные фасады</p></a>
+                                <a href="#"><p class="text-sans-navSlide">УФ Печать</p></a>
+                        </div>
+                        <a href="#" class="text-sans-navSlide">Services</a>
+                        <a href="#" class="text-sans-navSlide">Clients</a>
+                        <a href="#" class="text-sans-navSlide">Contact</a>
+                        <button class="callUsSlide" data-toggle="modal" data-target="#callUsModal">
+                                <img src="./img/icons/callUs-icon.svg" alt="">
+                                <span class="text-mons-whiteSlide">Свяжитесь с нами</span>
+                        </button>
+                        </div>
+                </div>
+           </div>
+        </div>
+        <div class="wrapp-navWhite">
+           <div class="navWhite">
+            <div class="dropdown">
+                <button class="dropbtn"><span class="text-sans-nav">Компания</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
+                <div class="dropdown-content">
+                  <a href="#" class="text-sans-drop">Преимущества</a>
+                  <a href="#" class="text-sans-drop">Партнеры</a>
+                  <a href="#" class="text-sans-drop">О нас</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><span class="text-sans-nav">Продукция</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
+                <div class="dropdown-content">
+                  <a href="#" class="text-sans-drop">Раскройка и оклейка</a>
+                  <a href="#" class="text-sans-drop">Раздвижные двери</a>
+                  <a href="./furniture.html" class="text-sans-drop">Корпусная мебель</a>
+                  <a href="#" class="text-sans-drop">Кухонные фасады</a>
+                  <a href="#" class="text-sans-drop">УФ Печать</a>
+                </div>
+            </div>
+            <div class="linksNavbar">
+                <a href="./questions.html">
+                    <span class="text-sans-nav">Клиенту</span>
+                </a>
+                <a href="#">
+                    <span class="text-sans-nav">Контакты</span>
+                </a>
+                <a href="#">
+                    <span class="text-sans-nav">Отзывы</span>
+                </a>
+                <a href="#">
+                    <span class="text-sans-nav">Свяжитесь с нами быстро</span>
+                </a>
+            </div>
+            <div class="messengers">
+                <a href="#"><img src="./img/icons/odnoklassniki-logo.svg" alt=""></a>
+                <a href="#"><img src="./img/icons/instagram-logo.svg" alt=""></a>
+            </div>
+           </div>
+        </div>
+</div>
+
+    <div class="position">
+        <div class="position-title">
+            <h2 class="title">Раскрой и оклейка</h2>
+        </div>
+        <div class="position-fotorama">
+            <div class="fotorama"
+            data-nav="thumbs"
+            data-autoplay="true"
+            data-fit="contain"
+            data-allowfullscreen="true"
+            data-width="100%">
+                <img src="./img/position-img/гардероб/1-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/2-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/3-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/4-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/5-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/6-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/7-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/8-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/9-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/10-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/11-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/12-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/13-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/14-min.jpg" alt="">
+                <img src="./img/position-img/гардероб/15-min.jpg" alt="">
+              </div>
+        </div>
+
+    </div>
+    
+    <div class="callBack-wrapper">
+            <div class="callBack">
+                <div class="callBack-text">
+                    <p class="text-sans-callBack">Если у вас остались какие-либо впросы, или вам нужна консультация специалистов - напишите нам, или позвоните по указанному телефону</p>
+                </div>
+                <div class="callBack-buttons">
+                    <div class="callBack-send">
+                        <button class="callBack-send-btn" data-toggle="modal" data-target="#exampleModalFooter" data-whatever="@mdo">Написать</button>
+                    </div>
+                    <div class="callBack-number">
+                        <div class="callBack-number-btn">
+                            <img src="./img/icons/pointer.svg" alt="">
+                            <a href="tel:8 029 62 9 2007" class="number-link">8 029 62 9 2007</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+            <div class="wrapp-footer">
+                <div class="footer">
+                    <div class="row">
+                        <div class="col col-12 col-sm-12 col-md-4 col-lg-2">
+                            <h3 class="title-footer">О компании</h3>
+                            <div class="link">
+                                <a href="#" class="link-footer">Приимущества</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="link-footer">Партнеры</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="link-footer">О нас</a>
+                            </div>   
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-4 col-lg-2">
+                            <h3 class="title-footer">Продукция</h3>
+                            <div class="link">
+                                <a href="#" class="link-footer">Раскройка и оклейка</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="link-footer">Раздвижные двери</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="link-footer">Корпусная мебель</a>
+                            </div> 
+                            <div class="link">
+                                <a href="#" class="link-footer">Кухонные фасады</a>
+                            </div> 
+                            <div class="link">
+                                <a href="#" class="link-footer">УФ Печать</a>
+                            </div>   
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-4 col-lg-2">
+                            <h3 class="title-footer">Контакты</h3>
+                            <div class="link">
+                                <p class="link-number">
+                                        sevage2007@mail.ru
+                                </p>
+                            </div>
+                            <div class="link">
+                                <p class="link-number">8 (0152) 73 80 56</p>
+                            </div>
+                            <div class="link">
+                                <p class="link-number">8 029 62 9 2007</p>
+                            </div>
+                            <div class="link">
+                                <p class="link-number">8 029 73 9 2007</p>
+                            </div> 
+                            <div class="link">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+                                <div class="link">
+                                        <p class="text-footer">
+                                            Для заказа печати оставляйте свои заявки по адресу эллектронной почты:
+                                        </p>
+                                    </div>
+                                <div class="link">
+                                        <p class="link-number">sevage_print@mail.ru</p>
+                                </div> 
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+                                <h3 class="title-footer">Вам нужна консультация? Напишите нам!</h3>
+                                <button type="button" class="footerBtnSend" data-toggle="modal" data-target="#exampleModalFooter" data-whatever="@mdo"><span class="text-footer">Написать</span></button>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Modal Form -->
+        <div class="modal fade" id="exampleModalFooter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Новое сообщение</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Введите ваше имя </label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Иванов Иван Иванович">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Введите ваш номер телефона</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="+375 (00) 000 00 00">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Введите ваше сообщение</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-send">Отправить</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal Contact Information Window-->
+        <div class="modal fade" id="callUsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Контакты</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <div class="wrapper-modalContacts">
+                    <div class="modalContacts">
+                        <div class="phones">
+                            <div class="phones-title">
+                                <div class="phones-title-img">
+                                    <img src="./img/icons/modalIcons/phone-icon.svg" alt="">
+                                </div>
+                                <div class="phones-title-text">
+                                    <h4 class="text-mons-modal">Телефоны</h4>
+                                </div>
+                            </div>
+                            <div class="phones-numbers">
+                                <div class="phones-numbers-items">
+                                <p class="text-sans-item">8 (0152) 73 80 56</p> 
+                                </div>
+                                <div class="phones-numbers-items">
+                                <p class="text-sans-item">8 029 62 9 2007</p> 
+                                </div>
+                                <div class="phones-numbers-items">
+                                <p class="text-sans-item">8 029 73 9 2007</p>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="email-title">
+                                <div class="email-title-img">
+                                    <img src="./img/icons/modalIcons/mail-icon.svg" alt="">
+                                </div>
+                                <div class="email-title-text">
+                                    <h4 class="text-mons-modal">Email</h4>
+                                </div>
+                            </div>
+                            <div class="email-post">
+                                <div class="email-post-item">
+                                    <p class="text-sans-item">sevage2007@mail.ru</p>
+                                </div>
+                                <div class="email-post-item">
+                                    <p class="text-sans-item">sevage_print@mail.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location">
+                            <div class="location-title">
+                                <div class="location-title-img">
+                                    <img src="./img/icons/modalIcons/location-icon.svg" alt="">
+                                </div>
+                                <div class="location-title-text">
+                                    <h4 class="text-mons-modal">Наш адрес</h4>
+                                </div>
+                            </div>
+                            <div class="location-street">
+                                <div class="location-street-item">
+                                    <p class="text-sans-item">г.Гродно ул.Ожешко д.74</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="worktime">
+                            <div class="worktime-title">
+                                <div class="worktime-title-img">
+                                    <img src="./img/icons/modalIcons/worktime-icon.svg" alt="">
+                                </div>
+                                <div class="worktime-title-text">
+                                    <h4 class="text-mons-modal">График работы</h4>
+                                </div>
+                            </div>
+                            <div class="worktime-tabl">
+                                <div class="worktime-tabl-item">
+                                    <p class="text-sans-item">ПН-ПТ с 10.00 - 18.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+    <script src="./libs/fotorama/fotorama.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

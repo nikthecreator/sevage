@@ -18,96 +18,99 @@
     <title>Корпусная мебель</title>
 </head>
 
+<!-- Navbar -->
 <div class="myNavbar">
-        <div class="wrapp-company">
-            <div class="company">
-                <h5 class="text-company">Официальный сайт компании</h5>
+    <div class="wrapp-company">
+        <div class="company">
+            <h5 class="text-company">Официальный сайт компании ООО"Севаж"</h5>
+        </div>
+    </div>
+    <div class="wrapp-navBlue">
+       <div class="navBlue">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo3.svg" alt="" width="50px" height="50px">
+            </a>
+            <div class="work-time">
+                    <p class="text-mons-white">Время работы : пн - пт с  <span class="text-mons-yellow">10.00 - 18.00</span></p>
+            </div>
+            <button class="callUs" data-toggle="modal" data-target="#callUsModal">
+                <img src="./img/icons/callUs-icon.svg" alt="">
+                <span class="text-mons-white">Свяжитесь с нами</span>
+            </button>
+            <div class="menu-btn" onclick="openNav()">
+                <span class="text-mons-menu">Меню</span>
+                <img src="./img/icons/menu-icon.svg" alt="">
+            </div>
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="wrapp-mySlidenav">
+                        <button class="accordion"><span class="title-accordion">Компания</span></button>
+                    <div class="panel">
+                            <a href="#work-scroll"><p class="text-sans-navSlide">Преимущества</p></a>
+                            <a href="#partners-scroll"><p class="text-sans-navSlide">Партнеры</p></a>
+                            <a href="#about-scroll"><p class="text-sans-navSlide">О нас</p></a>
+                    </div>
+                    <button class="accordion"><span class="title-accordion">Продукция</span></button>
+                    <div class="panel">
+                            <a href="./raskroi.html"><p class="text-sans-navSlide">Раскройк оклейка</p></a>
+                            <a href="#"><p class="text-sans-navSlide">Конструктор</p></a>
+                            <a href="./corpus.html"><p class="text-sans-navSlide">Корпусная мебель</p></a>
+                            <a href="./fasad.html"><p class="text-sans-navSlide">Кухонные фасады</p></a>
+                            <a href="./uf.html"><p class="text-sans-navSlide">УФ Печать</p></a>
+                    </div>
+                    <a href="#work-scroll" class="text-sans-navSlide">Сервисы</a>
+                    <a href="./questions.html" class="text-sans-navSlide">Клиенту</a>
+                    <a href="./contacts.html" class="text-sans-navSlide">Контакты</a>
+                    <button class="callUsSlide" data-toggle="modal" data-target="#callUsModal">
+                            <img src="./img/icons/callUs-icon.svg" alt="">
+                            <span class="text-mons-whiteSlide">Свяжитесь с нами</span>
+                    </button>
+                    </div>
+            </div>
+       </div>
+    </div>
+    <div class="wrapp-navWhite">
+       <div class="navWhite">
+        <div class="dropdown">
+            <button class="dropbtn"><span class="text-sans-nav">Компания</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
+            <div class="dropdown-content">
+              <a href="#" class="text-sans-drop">Преимущества</a>
+              <a href="#partners-scroll" class="text-sans-drop">Партнеры</a>
+              <a href="#about-scroll" class="text-sans-drop">О нас</a>
             </div>
         </div>
-        <div class="wrapp-navBlue">
-           <div class="navBlue">
-                <a href="./index.html" class="logo">
-                    <img src="./img/icons/logo.svg" alt="">
-                </a>
-                <div class="work-time">
-                        <p class="text-mons-white">Время работы : пн - пт с  <span class="text-mons-yellow">10.00 - 18.00</span></p>
-                </div>
-                <button class="callUs" data-toggle="modal" data-target="#callUsModal">
-                    <img src="./img/icons/callUs-icon.svg" alt="">
-                    <span class="text-mons-white">Свяжитесь с нами</span>
-                </button>
-                <div class="menu-btn" onclick="openNav()">
-                    <span class="text-mons-menu">Меню</span>
-                    <img src="./img/icons/menu-icon.svg" alt="">
-                </div>
-                <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="wrapp-mySlidenav">
-                            <button class="accordion"><span class="title-accordion">Компания</span></button>
-                        <div class="panel">
-                                <a href="#"><p class="text-sans-navSlide">Преимущества</p></a>
-                                <a href="#"><p class="text-sans-navSlide">Партнеры</p></a>
-                                <a href="#"><p class="text-sans-navSlide">О нас</p></a>
-                        </div>
-                        <button class="accordion"><span class="title-accordion">Продукция</span></button>
-                        <div class="panel">
-                                <a href="#"><p class="text-sans-navSlide">Раскройка и оклейка</p></a>
-                                <a href="#"><p class="text-sans-navSlide">Раздвижные двери</p></a>
-                                <a href="./"><p class="text-sans-navSlide">Корпусная мебель</p></a>
-                                <a href="#"><p class="text-sans-navSlide">Кухонные фасады</p></a>
-                                <a href="#"><p class="text-sans-navSlide">УФ Печать</p></a>
-                        </div>
-                        <a href="#" class="text-sans-navSlide">Services</a>
-                        <a href="#" class="text-sans-navSlide">Clients</a>
-                        <a href="#" class="text-sans-navSlide">Contact</a>
-                        <button class="callUsSlide" data-toggle="modal" data-target="#callUsModal">
-                                <img src="./img/icons/callUs-icon.svg" alt="">
-                                <span class="text-mons-whiteSlide">Свяжитесь с нами</span>
-                        </button>
-                        </div>
-                </div>
-           </div>
+        <div class="dropdown">
+            <button class="dropbtn"><span class="text-sans-nav">Продукция</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
+            <div class="dropdown-content">
+              <a href="./raskroi.html" class="text-sans-drop">Раскрой и оклейка</a>
+              <a href="#" class="text-sans-drop">Конструктор</a>
+              <a href="./furniture.html" class="text-sans-drop">Корпусная мебель</a>
+              <a href="./fasad.html" class="text-sans-drop">Кухонные фасады</a>
+              <a href="./uf.html" class="text-sans-drop">УФ Печать</a>
+            </div>
         </div>
-        <div class="wrapp-navWhite">
-           <div class="navWhite">
-            <div class="dropdown">
-                <button class="dropbtn"><span class="text-sans-nav">Компания</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
-                <div class="dropdown-content">
-                  <a href="#" class="text-sans-drop">Преимущества</a>
-                  <a href="#" class="text-sans-drop">Партнеры</a>
-                  <a href="#" class="text-sans-drop">О нас</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn"><span class="text-sans-nav">Продукция</span> <img src="./img/icons/drop-arow.svg" class="drop-arow" alt=""></button>
-                <div class="dropdown-content">
-                  <a href="#" class="text-sans-drop">Раскройка и оклейка</a>
-                  <a href="#" class="text-sans-drop">Раздвижные двери</a>
-                  <a href="./furniture.html" class="text-sans-drop">Корпусная мебель</a>
-                  <a href="#" class="text-sans-drop">Кухонные фасады</a>
-                  <a href="#" class="text-sans-drop">УФ Печать</a>
-                </div>
-            </div>
-            <div class="linksNavbar">
-                <a href="./questions.html">
-                    <span class="text-sans-nav">Клиенту</span>
-                </a>
-                <a href="#">
-                    <span class="text-sans-nav">Контакты</span>
-                </a>
-                <a href="#">
-                    <span class="text-sans-nav">Отзывы</span>
-                </a>
-                <a href="#">
-                    <span class="text-sans-nav">Свяжитесь с нами быстро</span>
-                </a>
-            </div>
-            <div class="messengers">
-                <a href="#"><img src="./img/icons/odnoklassniki-logo.svg" alt=""></a>
-                <a href="#"><img src="./img/icons/instagram-logo.svg" alt=""></a>
-            </div>
-           </div>
+        <div class="linksNavbar">
+            <a href="./questions.html">
+                <span class="text-sans-nav">Клиенту</span>
+            </a>
+            <a href="./contacts.html">
+                <span class="text-sans-nav">Контакты</span>
+            </a>
+            <a href="#">
+                <span class="text-sans-nav">Отзывы</span>
+            </a>
+            <a href="#">
+                <span class="text-sans-nav">Свяжитесь с нами быстро:</span>
+            </a>
         </div>
+        <div class="messengers">
+            <a href="#"><img src="./img/icons/telegram.svg" alt=""></a>
+            <a href="viber://add?number=375445846629" href="viber://chat?number=+120345678910" ><img src="./img/icons/viber.svg" alt=""></a>
+            <a href="#"><img src="./img/icons/whatsapp.svg" alt=""></a>
+            <a href="https://www.instagram.com/sevag2007/?hl=ru"><img src="./img/icons/instagram-logo.svg" alt=""></a>
+        </div>
+       </div>
+    </div>
 </div>
 
     <div class="position">
